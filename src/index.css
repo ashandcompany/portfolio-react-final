@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@theme {
+  --color-pink-light: #FFD6EC;
+  --color-pink: #FF9ED2;
+  --color-pink-dark: #FF69B4;
+  
+  --color-darkPink-light: #4A314D;
+  --color-darkPink: #362135;
+  --color-darkPink-dark: #231523;
+}
+
+.shiny-effect {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(circle, rgba(178, 19, 202, 0.2), transparent 70%);
+}
