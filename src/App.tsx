@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import HtmlTemplate from "./HtmlTemplate";
+import Projects from "./components/Projects"
 import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <ThemeToggle />
       <Navbar />
       <Hero />
+      <Projects />
     </HtmlTemplate>
   );
 }

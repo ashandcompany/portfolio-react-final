@@ -1,5 +1,5 @@
 import React from "react";
-import profilepic from "../assets/profpic.png";
+import sillylittleguy from "/sillylittleguy.webp?url";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
 import {
@@ -19,7 +19,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center pt-20 pb-10 px-6">
+    <div className="min-h-screen flex items-center justify-center pt-10 pb-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         <div className="md:w-1/2 text-center md:text-left">
           <motion.div
@@ -30,13 +30,13 @@ const Hero = () => {
           >
             <TypeAnimation
               sequence={[
-                "Développeuse Fullstack Passionnée",
+                "Développeuse Fullstack",
                 1000,
-                "Experte en Transformation Digitale",
+                "Transformation digitale",
                 1000,
-                "Spécialiste en Frontend & Backend",
+                "Frontend & Backend",
                 1000,
-                "Alternante Déterminée",
+                "Alternante",
                 1000,
               ]}
               speed={50}
@@ -63,7 +63,7 @@ const Hero = () => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 1 }}
-              className="text-gray-300 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mb-6"
+              className="dark:text-gray-300 text-gray-600 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mb-6"
             >
               Spécialisée en programmation & Web Design.
             </motion.p>
@@ -83,17 +83,17 @@ const Hero = () => {
                 }}
                 className="px-6 py-3 bg-pink dark:bg-pink-dark text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
-                Contact Me
+                Contactez moi
               </motion.a>
               <motion.a
-                href="#contact"
+                href="#portfolio"
                 whileHover={{
                   scale: 1.05,
                   boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
                 }}
                 className="px-6 py-3 bg-white/50 dark:bg-darkPink-light/30 backdrop-blur-sm text-gray-800 dark:text-pink-light font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
-                View Projects
+                Voir mes projets
               </motion.a>
             </motion.div>
           </motion.div>
@@ -103,8 +103,8 @@ const Hero = () => {
           <div className="relative w-[300px] md:w-[450px]">
             <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-pink to-purple-400 dark:from-pink-dark dark:to-purple-700 rounded-full blur-3xl opacity-30 animate-pulse"></div>
             <motion.img
-              src={profilepic}
-              className="relative w-full rounded-full overflow-hidden border-4 border-white/30 dark:border-darkPink-light/30 shadow-xl"
+              src={sillylittleguy}
+              className="relative w-full overflow-hidden dark:border-darkPink-light/30"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}

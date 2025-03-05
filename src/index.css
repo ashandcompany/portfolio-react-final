@@ -1,4 +1,12 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Baby Doll";
+  font-style: normal;
+  font-display: swap;
+  src: url("../public/Baby-Doll.otf") format("opentype");
+}
+
 @theme {
   --color-pink-light: #FFD6EC;
   --color-pink: #FF9ED2;
@@ -7,6 +15,8 @@
   --color-darkPink-light: #4A314D;
   --color-darkPink: #362135;
   --color-darkPink-dark: #231523;
+
+  --font-babydoll: "Baby doll", "sans-serif"; 
 }
 
 .shiny-effect {
