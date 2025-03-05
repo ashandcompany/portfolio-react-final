@@ -6,12 +6,12 @@ const imageUrls = Object.values(images).map((module) => module.default);
 
 const projects = [
   {
-    title: "Site galerie de Cutea",
-    description: "Un des premiers projets réalisé durant mon BUT.",
-    technologies: ["HTML", "CSS"],
-    imageUrl: imageUrls[1],
+    title: "Doctolib",
+    description: "Un site Codigniter sensé reproduire (un peu) Doctolib et ses fonctionnalités",
+    technologies: ["CodeIgniter", "MySQL", "FullCalendar"],
+    imageUrl: imageUrls[5],
     size: "large",
-    url: "github.com"
+    url: "https://emma-roizot.fr/codeigniterah/public/"
   },
   {
     title: "Dashboard",
@@ -45,9 +45,9 @@ const projects = [
     size: "small"
   },
   {
-    title: "Doctolib",
-    description: "A personal portfolio website showcasing my work and skills",
-    technologies: ["React", "Tailwind CSS", "Framer Motion"],
+    title: "Site galerie de Cutea",
+    description: "Un des premiers projets réalisé durant mon BUT.",
+    technologies: ["HTML", "CSS"],
     imageUrl: imageUrls[1],
     size: "small"
   },
