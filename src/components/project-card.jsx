@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Download } from "lucide-react";
 
 function Card({ children, className = "" }) {
   return (
@@ -28,6 +28,7 @@ export default function ProjectCard({
   imageUrl,
   size = "medium",
   url,
+  telechargement_url
 }) {
   const sizeClasses = {
     small: "md:col-span-1",
@@ -66,6 +67,17 @@ export default function ProjectCard({
           >
             Voir le projet
             <ExternalLink size={18} />
+          </a>
+          )}
+          {telechargement_url && (
+            <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 w-fit mx-auto bg-pink dark:bg-pink-dark text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center gap-2"
+          >
+            Télécharger le projet
+            <Download size={18} />
           </a>
           )}
         </div>

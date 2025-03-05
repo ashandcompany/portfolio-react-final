@@ -18,21 +18,24 @@ const projects = [
     description: "Un projet de dashboard indiquant la consommation en Moselle et Grand Est :)",
     technologies: ["Chart JS", "PHP", "Javascript"],
     imageUrl: imageUrls[2],
-    size: "small"
+    size: "small",
+    url: "https://emma-roizot.fr/sae303_hostinger/index.php"
   },
   {
     title: "Earthly",
     description: "Une application de quêtes quotidiennes et hebdomadaires pour protéger la planète",
     technologies: ["CSS", "PHP", "Javascript"],
     imageUrl: imageUrls[3],
-    size: "medium"
+    size: "medium",
+    url: "https://emma-roizot.fr/earthly/index.html"
   },
   {
     title: "Thème Wordpress \"Oz\"",
     description: "Un petit thème Wordpress sur le Magicien d'Oz, avec des CPT et des pages personnalisés",
     technologies: ["Wordpress", "PHP", "SEO"],
     imageUrl: imageUrls[4],
-    size: "medium"
+    size: "medium",
+    telechargement_url: "https://emma-roizot.fr/theme-the-wizard-of-oz.zip"
   },
   {
     title: "Portfolio",
