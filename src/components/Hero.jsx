@@ -1,5 +1,5 @@
 import React from "react";
-import sillylittleguy from "../../public/sillylittleguy.webp";
+import sillylittleguy from "/sillylittleguy.webp?url";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
 import {
@@ -19,7 +19,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center pt-20 pb-10 px-6">
+    <div className="min-h-screen flex items-center justify-center pt-10 pb-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         <div className="md:w-1/2 text-center md:text-left">
           <motion.div
@@ -83,17 +83,17 @@ const Hero = () => {
                 }}
                 className="px-6 py-3 bg-pink dark:bg-pink-dark text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
-                Contact Me
+                Contactez moi
               </motion.a>
               <motion.a
-                href="#contact"
+                href="#portfolio"
                 whileHover={{
                   scale: 1.05,
                   boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
                 }}
                 className="px-6 py-3 bg-white/50 dark:bg-darkPink-light/30 backdrop-blur-sm text-gray-800 dark:text-pink-light font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
-                View Projects
+                Voir mes projets
               </motion.a>
             </motion.div>
           </motion.div>
