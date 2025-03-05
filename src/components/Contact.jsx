@@ -23,7 +23,7 @@ const Textarea = ({ placeholder, ...props }) => (
 // Button component
 const Button = ({ children, className, ...props }) => (
   <button
-    className={`bg-pink-500 text-white p-3 rounded-lg hover:bg-pink-600 transition duration-200 ease-in-out ${className}`}
+    className={`bg-pink-dark text-white p-3 rounded-lg hover:bg-pink transition duration-200 ease-in-out ${className}`}
     {...props}
   >
     {children}
@@ -32,17 +32,17 @@ const Button = ({ children, className, ...props }) => (
 
 // Card components
 const Card = ({ children, className }) => (
-  <div className={`bg-white shadow-xl p-8 rounded-lg ${className}`}>
+  <div className={`bg-white shadow-xl dark:bg-darkPink p-8 rounded-lg ${className}`}>
     {children}
   </div>
 );
 
 const CardHeader = ({ children }) => (
-  <div className="text-xl font-semibold text-gray-800 mb-4">{children}</div>
+  <div className="text-xl font-semibold dark:text-pinkDark text-pinkDark-dark dark:text-pink-dark mb-4">{children}</div>
 );
 
 const CardTitle = ({ children }) => (
-  <h2 className="text-3xl font-bold text-pink-500 mb-4">{children}</h2>
+  <h2 className="text-3xl font-bold pink-dark mb-4">{children}</h2>
 );
 
 const CardContent = ({ children }) => <div className="mt-4">{children}</div>;

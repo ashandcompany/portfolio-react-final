@@ -41,7 +41,7 @@ const projects = [
     title: "Portfolio",
     description: "Le portfolio sur lequel vous vous trouvez actuellement :)",
     technologies: ["React", "Vite", "Tailwind CSS"],
-    imageUrl: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b",
+    imageUrl: imageUrls[6],
     size: "small"
   },
   {

@@ -89,7 +89,7 @@ const Hero = () => {
                 Contactez moi
               </motion.a>
               <motion.a
-                href="#portfolio"
+                href="#contact"
                 whileHover={{
                   scale: 1.05,
                   boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
