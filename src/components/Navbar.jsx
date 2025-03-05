@@ -33,9 +33,10 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { name: "About", url: "#skills" },
-    { name: "Portfolio", url: "#portfolio" },
-    { name: "Contact", url: "#contact" },
+    { name: "À propos", to: "about" },
+    { name: "Projets", to: "projects" },     // Ajout de Projets
+    { name: "Galerie", to: "gallery" },      // Ajout de Gallery
+    { name: "Contact", to: "contact" },
   ];
 
   return (
@@ -57,12 +58,15 @@ const Navbar = () => {
           <ul className="flex space-x-8">
             {navItems.map((item) => (
               <li key={item.name}>
-                <a
-                  href={item.url}
+                <Link
+                  to={item.to}
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
                   className="text-gray-700 dark:text-pink-light hover:text-pink-dark dark:hover:text-pink transition-colors duration-300 font-medium"
                 >
                   {item.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -86,13 +90,16 @@ const Navbar = () => {
         <ul className="flex flex-col space-y-6 text-center text-gray-700 dark:text-pink-light hover:text-pink-dark dark:hover:text-pink transition-colors duration-300 font-medium">
           {navItems.map((item) => (
             <li key={item.name}>
-              <a
-                href={item.url}
+              <Link
+                to={item.to}
+                smooth={true}
+                duration={500}
+                offset={-70}
                 onClick={closeNav}
                 className="text-xl font-medium text-gray-700 dark:text-pink-light hover:text-pink-dark dark:hover:text-pink transition-colors duration-300"
               >
                 {item.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

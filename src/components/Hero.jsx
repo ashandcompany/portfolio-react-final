@@ -19,7 +19,10 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center pt-10 pb-10 px-6">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center pt-10 pb-10 px-6"
+    >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         <div className="md:w-1/2 text-center md:text-left">
           <motion.div
@@ -113,26 +116,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {/* 
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1, delay: 2 }}
-        className="flex flex-row text-7xl px-12 md:px-0 w-full justify-center items-center py-24"
-      >
-        <p className="text-gray-200 mr-6">My Tech Stack</p>
-        <DiHtml5 className="text-orange-600 mx-2" />
-        <DiCss3 className="text-blue-600 mx-2" />
-        <DiJavascript1 className="text-yellow-500 mx-2" />
-        <DiReact className="text-blue-500 mx-2" />
-        <DiNodejsSmall className="text-green-500 mx-2" />
-      </motion.div>
-
-      <div className="absolute inset-0 hidden md:block">
-        <ShinyEffect left={0} top={0} size={1400} />
-      </div> */}
-    </div>
+    </section>
   );
 };
 

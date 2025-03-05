@@ -63,7 +63,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="py-12" id="porfolio">
+    <section className="pb-12" id="projects">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

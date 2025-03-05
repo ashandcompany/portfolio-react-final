@@ -4,7 +4,7 @@
   font-family: "Baby Doll";
   font-style: normal;
   font-display: swap;
-  src: url("../public/Baby-Doll.otf") format("opentype");
+  src: url("/Baby-Doll.otf") format("opentype");
 }
 
 @theme {
