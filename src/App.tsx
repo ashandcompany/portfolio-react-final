@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import HtmlTemplate from "./HtmlTemplate"; // Vérifie le bon chemin
+import HtmlTemplate from "./HtmlTemplate";
 
 function App() {
   return (

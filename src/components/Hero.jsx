@@ -1,5 +1,5 @@
 import React from "react";
-import profilepic from "../assets/profpic.png";
+import sillylittleguy from "../../public/sillylittleguy.webp";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
 import {
@@ -30,13 +30,13 @@ const Hero = () => {
           >
             <TypeAnimation
               sequence={[
-                "Développeuse Fullstack Passionnée",
+                "Développeuse Fullstack",
                 1000,
-                "Experte en Transformation Digitale",
+                "Transformation digitale",
                 1000,
-                "Spécialiste en Frontend & Backend",
+                "Frontend & Backend",
                 1000,
-                "Alternante Déterminée",
+                "Alternante",
                 1000,
               ]}
               speed={50}
@@ -63,7 +63,7 @@ const Hero = () => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 1 }}
-              className="text-gray-300 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mb-6"
+              className="dark:text-gray-300 text-gray-600 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mb-6"
             >
               Spécialisée en programmation & Web Design.
             </motion.p>
@@ -103,8 +103,8 @@ const Hero = () => {
           <div className="relative w-[300px] md:w-[450px]">
             <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-pink to-purple-400 dark:from-pink-dark dark:to-purple-700 rounded-full blur-3xl opacity-30 animate-pulse"></div>
             <motion.img
-              src={profilepic}
-              className="relative w-full rounded-full overflow-hidden border-4 border-white/30 dark:border-darkPink-light/30 shadow-xl"
+              src={sillylittleguy}
+              className="relative w-full overflow-hidden dark:border-darkPink-light/30"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
